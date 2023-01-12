@@ -11,7 +11,7 @@
 void _print(char *str, int l)
 {
 	int i, j;
-	
+
 	i = j = 0;
 	while (i < l)
 	{
@@ -52,7 +52,7 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 	for (addrem += mulrem; k >= 0 && addrem; k--)
 	{
 		add = (dest[k] - '0') + addrem;
-		addrem = add /10;
+		addrem = add / 10;
 		dest[k] = add % 10 + '0';
 	}
 	if (addrem)
@@ -64,7 +64,6 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 /**
  * check_for_digits - checks the arguments to ensure they are digits
  * @av: pointer to arguments
- * 
  * Return: 0 if digits, 1 if not
  */
 int check_for_digits(char **av)
@@ -86,7 +85,6 @@ int check_for_digits(char **av)
  * init - intializes a string
  * @str: string to initialize
  * @l: length of string
- * 
  * Return: void
  */
 void init(char *str, int l)
